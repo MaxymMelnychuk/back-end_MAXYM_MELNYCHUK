@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="icon" href="Images\pikachu_icon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<title>Pokebox V2</title>
+</head>
+<body> 
+    <div style="display: flex; flex-direction: column;" >
+    <a href="../../calculer-moyenne/calculerMoyenne.php">calculer Moyenne</a>
+    <a href="../../guzzle-exercice/api-exercice.php">Exercice Guzzle</a>
+    </div>
+
+    <div class="filter_section">
+    <h1 class="gradient">Cards for you !</h1>
+        <div class="filter_container">
+        <select id="generation-filter">
+            <option value="">Toutes les générations</option>
+            <option value="generation-i">generation-i</option>
+            <option value="generation-ii">generation-ii</option>
+            <option value="generation-iii">generation-iii</option>
+            <option value="generation-iv">generation-iv</option>
+            <option value="generation-v">generation-v</option>
+            <option value="generation-vi">generation-vi</option>
+            <option value="generation-vii">generation-vii</option>
+            <option value="generation-viii">generation-viii</option>
+            <option value="generation-ix">generation-ix</option>
+        </select>
+        <div class="hearth"></div>
+
+        <input type="text" id="search" placeholder="Enter pokemon name">
+
+        <select id="pokemonSelect">
+            <option class="pok-type" value="">All</option>
+            <option class="pok-type" value="normal">normal</option>
+            <option class="pok-type" value="fire">fire</option>
+            <option class="pok-type" value="water">water</option>
+            <option class="pok-type" value="electric">electric</option>
+            <option class="pok-type" value="grass">grass</option>
+            <option class="pok-type" value="ice">ice</option>
+            <option class="pok-type" value="fighting">fighting</option>
+            <option class="pok-type" value="poison">poison</option>
+            <option class="pok-type" value="ground">ground</option>
+            <option class="pok-type" value="flying">flying</option>
+            <option class="pok-type" value="psychic">psychic</option>
+            <option class="pok-type" value="bug">bug</option>
+            <option class="pok-type" value="rock">rock</option>
+            <option class="pok-type" value="ghost">ghost</option>
+            <option class="pok-type" value="dragon">dragon</option>
+            <option class="pok-type" value="dark">dark</option>
+            <option class="pok-type" value="steel">steel</option>
+            <option class="pok-type" value="fairy">fairy</option>
+        </select>
+        </div>
+    </div>
+
+    <div class="error-message"></div>
+    
+
+    <div id="pokemonCards"></div>
+
+    
+    
+    
+    
+    <script src="script.js"></script>
+    <script src="cards.js"></script>
+</body>
+</html>
