@@ -1,0 +1,13 @@
+{
+    "name": "maxym/back-end",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Maxym\\BackEnd\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "^7.9"
+    }
+}
